@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Hungry Monster</title>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar  navbar-expand-lg navbar-dark ">
+            <div class="container-fluid justify-content-end ">
+            <a class="navbar-brand" href="">
+                <h1>HUNGRY MONSTER</h1>
+            </a>
+         
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
+                <div class="navbar-nav  ">
+                <a class="nav-link active" aria-current="page" href="#allData" id="homeClicked">Home</a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Recipies</a>
+                <a class="nav-link" href="#">Blog</a>
+                
+                </div>
+            </div>
+            </div>
+        </nav>
+
+        <div class="mt-4" id="allData">
+            <form class="form-inline justify-content-center">
+                <input class="form-control" id="search-meal" style="width: 25em;" type="search" placeholder="Search Meal" aria-label="Search">
+                <button class="btn btn-danger " id="search-btn" type="submit">Search</button>
+              </form>
+              
+              <div id="displayMeals-area"></div>
+        </div>
+        
+        <div id="mealDetails"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
